@@ -20,6 +20,7 @@ guideApp.progress = {
 	setStatus: function() {
 		var doneLen = this.$listDoneItem.length;
 		var totalLen = this.$listItem.length;
+		console.log(totalLen);
 		var pageText = doneLen + '/' + totalLen;
 		var percentText = ((doneLen * 100) / totalLen).toFixed(1);
 
