@@ -1,0 +1,64 @@
+/* ************************************************************
+	Table
+************************************************************ */
+
+.table_wrap {
+	position: relative;
+}
+
+/* 기본 - 세로형 */
+.table {
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+}
+.table caption {
+	display: inline-block;
+	position: absolute;
+	z-index: -10;
+	width: 0 !important;
+	height: 0 !important;
+	overflow: hidden !important;
+	font-size: medium;
+	line-height: normal;
+	word-break: break-all;
+	opacity:0 !important;
+}
+.table tr th,
+.table tr td {
+	padding: 1rem 2rem;
+	text-align: left;
+}
+.table thead th {
+	border-top: 0.1rem solid #ccc;
+	border-bottom: 0.1rem solid #ccc;
+	background: var(--color-gray100);
+}
+.table tbody td {
+	border-bottom: 0.1rem dashed #ccc;
+}
+.table tr:last-child td {
+	border-style: solid;
+}
+
+/* 가로형 */
+.table.row th {
+	background: var(--color-gray100);
+	font-weight: bold;
+}
+.table.row tbody th {
+	border-bottom: 0.1rem dashed #ccc;
+}
+.table.row tr:first-child th,
+.table.row tr:first-child td {
+	border-top: 0.1rem solid #ccc;
+}
+.table.row tr:last-child th {
+	border-style: solid;
+}
+
+/* 상단 유틸 */
+.table_wrap .top_util {
+	margin-bottom: 1rem;
+	text-align: right;
+}

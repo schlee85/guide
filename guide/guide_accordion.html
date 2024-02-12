@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Guide - Accordion</title>
+	<link rel="stylesheet" href="./asset/guide.css">
+	<link rel="stylesheet" href="/css/ui.css">
+	<script src="/js/jquery-3.7.1.min.js"></script>
+	<script src="/js/ui.js"></script>
+
+	<!-- highlight -->
+	<link rel="stylesheet" href="./asset/highlight/atom-one-dark.css">
+	<script src="./asset/highlight/highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
+</head>
+<body>
+	<div class="guide_components">
+		<h1 class="comp_mtit">Accordion</h1>
+		<p class="comp_mtxt">어코디언 컴포넌트.</p>
+
+		<!--  -->
+		<h2 class="comp_tit">기본 - 개별 동작</h2>
+		<div class="comp_sec">
+			<div class="comp_view">
+				<div class="acc_wrap" data-ui="accordion"> <!-- 단일 선택 시 [data-only-one] -->
+					<div class="acc_sec active"> <!-- 활성 시 .active -->
+						<div class="acc_head">
+							<button type="button">button</button>
+						</div>
+						<div class="acc_cont">
+							<div style="height:100px;background:pink;">content..</div>
+						</div>
+					</div>
+					<div class="acc_sec">
+						<div class="acc_head">
+							<button type="button">button</button>
+						</div>
+						<div class="acc_cont">
+							<div style="height:100px;background:pink;">content..</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="comp_code">
+<pre><code class="language-html">
+&lt;div class="acc_wrap" data-ui="accordion"&gt;
+	&lt;div class="acc_sec active"&gt; &lt;!-- 활성 시 .active --&gt;
+		&lt;div class="acc_head"&gt;
+			&lt;button type="button"&gt;button&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div class="acc_cont"&gt;
+			content..
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="acc_sec"&gt;
+		&lt;div class="acc_head"&gt;
+			&lt;button type="button"&gt;button&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div class="acc_cont"&gt;
+			content..
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+			</div>
+		</div>
+		<!--  -->
+
+		<!--  -->
+		<h2 class="comp_tit">기본 - 단일 동작</h2>
+		<div class="comp_sec">
+			<div class="comp_view">
+				<div class="acc_wrap" data-ui="accordion" data-only-one> <!-- 단일 선택 시 [data-only-one] -->
+					<div class="acc_sec active"> <!-- 활성 시 .active -->
+						<div class="acc_head">
+							<button type="button">button</button>
+						</div>
+						<div class="acc_cont">
+							<div style="height:100px;background:pink;">content..</div>
+						</div>
+					</div>
+					<div class="acc_sec">
+						<div class="acc_head">
+							<button type="button">button</button>
+						</div>
+						<div class="acc_cont">
+							<div style="height:100px;background:pink;">content..</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="comp_code">
+<pre><code class="language-html">
+&lt;div class="acc_wrap" data-ui="accordion" data-only-one&gt; &lt;!-- 단일 선택 시 [data-only-one] --&gt;
+	&lt;div class="acc_sec active"&gt; &lt;!-- 활성 시 .active --&gt;
+		&lt;div class="acc_head"&gt;
+			&lt;button type="button"&gt;button&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div class="acc_cont"&gt;
+			content..
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class="acc_sec"&gt;
+		&lt;div class="acc_head"&gt;
+			&lt;button type="button"&gt;button&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div class="acc_cont"&gt;
+			content..
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+			</div>
+		</div>
+		<!--  -->
+
+	</div>
+</body>
+</html>

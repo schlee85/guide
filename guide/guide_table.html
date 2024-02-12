@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Guide - Table</title>
+	<link rel="stylesheet" href="./asset/guide.css">
+	<link rel="stylesheet" href="/css/ui.css">
+	<link rel="stylesheet" href="./asset/highlight/atom-one-dark.css">
+	<script src="./asset/highlight/highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
+</head>
+<body>
+	<div class="guide_components">
+		<h1 class="comp_mtit">Table</h1>
+		<p class="comp_mtxt">테이블 컴포넌트.</p>
+
+		<!--  -->
+		<h2 class="comp_tit">세로형</h2>
+		<p class="comp_txt">.table_wrap 안에 .table 부여.</p>
+		<div class="comp_sec">
+			<div class="comp_view">
+				<div class="table_wrap">
+					<div class="top_util">
+						테이블 상단 유틸
+					</div>
+					<table class="table">
+						<caption>OO표 - 항목, 항목</caption>
+						<colgroup>
+							<col style="width: 33.3%;">
+							<col style="width: 33.3%;">
+							<col style="width: auto;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">헤더</th>
+								<th scope="col">헤더</th>
+								<th scope="col">헤더</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>항목</td>
+								<td>항목</td>
+								<td>항목</td>
+							</tr>
+							<tr>
+								<td>항목</td>
+								<td>항목</td>
+								<td>항목</td>
+							</tr>
+							<tr>
+								<td>항목</td>
+								<td>항목</td>
+								<td>항목</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="comp_code">
+<pre><code class="language-html">
+&lt;div class="table_wrap"&gt;
+	&lt;div class="top_util"&gt;
+		테이블 상단 유틸
+	&lt;/div&gt;
+	&lt;table class="table"&gt;
+		&lt;caption&gt;OO 표 - 항목, 항목&lt;/caption&gt;
+		&lt;colgroup&gt;
+			&lt;col style="width: 33.3%;"&gt;
+			&lt;col style="width: 33.3%;"&gt;
+			&lt;col style="width: auto;"&gt;
+		&lt;/colgroup&gt;
+		&lt;thead&gt;
+			&lt;tr&gt;
+				&lt;th scope="col"&gt;헤더&lt;/th&gt;
+				&lt;th scope="col"&gt;헤더&lt;/th&gt;
+				&lt;th scope="col"&gt;헤더&lt;/th&gt;
+			&lt;/tr&gt;
+		&lt;/thead&gt;
+		&lt;tbody&gt;
+			&lt;tr&gt;
+				&lt;td&gt;항목&lt;/td&gt;
+				&lt;td&gt;항목&lt;/td&gt;
+				&lt;td&gt;항목&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td&gt;항목&lt;/td&gt;
+				&lt;td&gt;항목&lt;/td&gt;
+				&lt;td&gt;항목&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;td&gt;항목&lt;/td&gt;
+				&lt;td&gt;항목&lt;/td&gt;
+				&lt;td&gt;항목&lt;/td&gt;
+			&lt;/tr&gt;
+		&lt;/tbody&gt;
+	&lt;/table&gt;
+&lt;/div&gt;
+
+</code></pre>
+			</div>
+		</div>
+		<!--  -->
+
+		<!--  -->
+		<h2 class="comp_tit">가로형</h2>
+		<p class="comp_txt">.table_wrap 안에 .table.row 부여.</p>
+		<div class="comp_sec">
+			<div class="comp_view">
+				<div class="table_wrap">
+					<table class="table row">
+						<caption>OO표 - 항목, 항목</caption>
+						<colgroup>
+							<col style="width: 33.3%;">
+							<col style="width: 33.3%;">
+							<col style="width: auto;">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">헤더</th>
+								<td>항목</td>
+								<td>항목</td>
+							</tr>
+							<tr>
+								<th scope="row">헤더</th>
+								<td>항목</td>
+								<td>항목</td>
+							</tr>
+							<tr>
+								<th scope="row">헤더</th>
+								<td>항목</td>
+								<td>항목</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="comp_code">
+<pre><code class="language-html">
+&lt;div class="table_wrap"&gt;
+	&lt;table class="table row"&gt;
+		&lt;caption&gt;OO표 - 항목, 항목&lt;/caption&gt;
+		&lt;colgroup&gt;
+			&lt;col style="width: 33.3%;"&gt;
+			&lt;col style="width: 33.3%;"&gt;
+			&lt;col style="width: auto;"&gt;
+		&lt;/colgroup&gt;
+		&lt;tbody&gt;
+			&lt;tr&gt;
+				&lt;th scope="row"&gt;헤더&lt;/th&gt;
+				&lt;td&gt;항목&lt;/td&gt;
+				&lt;td&gt;항목&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;th scope="row"&gt;헤더&lt;/th&gt;
+				&lt;td&gt;항목&lt;/td&gt;
+				&lt;td&gt;항목&lt;/td&gt;
+			&lt;/tr&gt;
+			&lt;tr&gt;
+				&lt;th scope="row"&gt;헤더&lt;/th&gt;
+				&lt;td&gt;항목&lt;/td&gt;
+				&lt;td&gt;항목&lt;/td&gt;
+			&lt;/tr&gt;
+		&lt;/tbody&gt;
+	&lt;/table&gt;
+&lt;/div&gt;
+
+</code></pre>
+			</div>
+		</div>
+		<!--  -->
+
+	</div>
+</body>
+</html>

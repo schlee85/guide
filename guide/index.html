@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Guide</title>
+	<link rel="stylesheet" href="./asset/guide.css">
+	<link rel="stylesheet" href="/css/ui.css">
+	<script src="./asset/jquery-3.7.1.min.js"></script>
+	<script src="./asset/guide.js"></script>
+</head>
+<body>
+	<div class="guide_wrap">
+		<header class="guide_header">
+			<span class="guide_logo">
+				<img src="./asset/logo.svg" height="30px" alt="프로젝트 이미지">
+			</span>
+			<h1 class="guide_tit">OOO UI 개발 진행표</h1>
+			<p class="guide_status">
+				<em>전체</em> : <span class="pages">0/0</span> pages (진행율 <span class="percent">0</span>%)
+			</p>
+		</header>
+		<div class="guide_lnb">
+			<div class="guide_search">
+				<div class="guide_search_inner">
+					<input type="text" placeholder="Page name ...">
+					<button type="button" class="check">
+						<img src="./asset/search.svg" alt="">
+					</button>
+					<button type="button" class="reset">
+						<img src="./asset/reset.svg" alt="">
+					</button>
+				</div>
+			</div>
+			<div class="guide_menu">
+				<h2 class="guide_stit">GUIDE</h2>
+				<div class="guide_menu_sec">
+					<h3 class="guide_mtit">Layout</h3>
+					<ul class="guide_list">
+						<li data-progress="">
+							<a href="#n">메인 레이아웃</a>
+							<!-- <a href="#n" class="newwin"><span class="blind">새창열기</span></a> -->
+						</li>
+						<li data-progress=""><a href="#n">서브 레이아웃</a></li>
+					</ul>
+				</div>
+				<div class="guide_menu_sec">
+					<h3 class="guide_mtit">Components</h3>
+					<ul class="guide_list">
+						<li><a href="./guide_color.html">컬러</a></li>
+						<li><a href="./guide_text.html">텍스트</a></li>
+						<li><a href="./guide_icon.html">아이콘</a></li>
+						<li><a href="./guide_button.html">버튼</a></li>
+						<li><a href="./guide_table.html">테이블</a></li>
+						<li><a href="./guide_form.html">폼</a></li>
+						<li><a href="./guide_list.html">리스트</a></li>
+						<li><a href="./guide_tabs.html">탭메뉴</a></li>
+						<li><a href="./guide_accordion.html">어코디언</a></li>
+						<li><a href="./guide_popup.html">팝업</a></li>
+						<!-- <li><a href="#">슬라이더</a></li>
+						<li><a href="#">스위치</a></li> -->
+					</ul>
+				</div>
+				<h2 class="guide_stit">PAGES</h2>
+				<div class="guide_menu_sec">
+					<h3 class="guide_mtit">메인</h3>
+					<ul class="guide_list">
+						<li data-progress="done"><a href="/html/sample01.html" target="_blank">sample</a></li>
+						<li data-progress="done"><a href="/html/sample02.html">sample</a></li>
+					</ul>
+				</div>
+				<div class="guide_menu_sec">
+					<h3 class="guide_mtit">서브1</h3>
+					<ul class="guide_list">
+						<li data-progress=""><a href="#n">noname</a></li>
+						<li data-progress=""><a href="#n">noname</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<main class="guide_content">
+			<div class="dummy">UI Develop</div>
+		</main>
+	</div>
+</body>
+</html>

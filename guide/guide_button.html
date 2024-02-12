@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Guide - Button</title>
+	<link rel="stylesheet" href="./asset/guide.css">
+	<link rel="stylesheet" href="/css/ui.css">
+	<link rel="stylesheet" href="./asset/highlight/atom-one-dark.css">
+	<script src="./asset/highlight/highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
+</head>
+<body>
+	<div class="guide_components">
+		<h1 class="comp_mtit">Button</h1>
+		<p class="comp_mtxt">버튼 컴포넌트.</p>
+
+		<!--  -->
+		<h2 class="comp_tit">기본</h2>
+		<p class="comp_txt">button/a/span 태그에 .btn 부여.</p>
+		<div class="comp_sec">
+			<div class="comp_view">
+				<button type="button" class="btn"><span>default</span></button>
+				<button type="button" class="btn primary"><span>primary</span></button>
+				<button type="button" class="btn secondary"><span>secondary</span></button>
+				<br><br>
+				<a href="#" class="btn"><span>a tag</span></a>
+				<span class="btn"><span>span tag</span></span>
+			</div>
+			<div class="comp_code">
+<pre><code class="language-html">
+&lt;button type="button" class="btn"&gt;&lt;span&gt;default&lt;/span&gt;&lt;/button&gt;
+&lt;button type="button" class="btn primary"&gt;&lt;span&gt;primary&lt;/span&gt;&lt;/button&gt;
+&lt;button type="button" class="btn secondary"&gt;&lt;span&gt;secondary&lt;/span&gt;&lt;/button&gt;
+
+&lt;a href="#" class="btn"&gt;&lt;span&gt;a tag&lt;/span&gt;&lt;/a&gt;
+&lt;span class="btn"&gt;&lt;span&gt;span tag&lt;/span&gt;&lt;/span&gt;
+
+</code></pre>
+			</div>
+		</div>
+		<!--  -->
+
+		<!--  -->
+		<h2 class="comp_tit">비활성</h2>
+		<p class="comp_txt">[disabled] 속성 부여.</p>
+		<div class="comp_sec">
+			<div class="comp_view">
+				<button type="button" class="btn" disabled><span>default</span></button>
+				<button type="button" class="btn primary" disabled><span>primary</span></button>
+				<button type="button" class="btn secondary" disabled><span>secondary</span></button>
+			</div>
+			<div class="comp_code">
+<pre><code class="language-html">
+&lt;button type="button" class="btn" disabled&gt;&lt;span&gt;default&lt;/span&gt;&lt;/button&gt;
+&lt;button type="button" class="btn primary" disabled&gt;&lt;span&gt;primary&lt;/span&gt;&lt;/button&gt;
+&lt;button type="button" class="btn secondary" disabled&gt;&lt;span&gt;secondary&lt;/span&gt;&lt;/button&gt;
+
+</code></pre>
+			</div>
+		</div>
+		<!--  -->
+
+		<!--  -->
+		<h2 class="comp_tit">외곽선</h2>
+		<p class="comp_txt">.outline 추가.</p>
+		<div class="comp_sec">
+			<div class="comp_view">
+				<button type="button" class="btn outline"><span>default</span></button>
+				<button type="button" class="btn primary outline"><span>primary</span></button>
+				<button type="button" class="btn secondary outline"><span>secondary</span></button>
+			</div>
+			<div class="comp_code">
+<pre><code class="language-html">
+&lt;button type="button" class="btn outline"&gt;&lt;span&gt;default&lt;/span&gt;&lt;/button&gt;
+&lt;button type="button" class="btn primary outline"&gt;&lt;span&gt;primary&lt;/span&gt;&lt;/button&gt;
+&lt;button type="button" class="btn secondary outline"&gt;&lt;span&gt;secondary&lt;/span&gt;&lt;/button&gt;
+
+</code></pre>
+			</div>
+		</div>
+		<!--  -->
+
+		<!--  -->
+		<h2 class="comp_tit">크기</h2>
+		<p class="comp_txt">.small / .large 추가</p>
+		<div class="comp_sec">
+			<div class="comp_view">
+				<button type="button" class="btn small"><span>small</span></button>
+				<button type="button" class="btn"><span>default</span></button>
+				<button type="button" class="btn large"><span>large</span></button>
+			</div>
+			<div class="comp_code">
+<pre><code class="language-html">
+&lt;button type="button" class="btn small"&gt;&lt;span&gt;small&lt;/span&gt;&lt;/button&gt;
+&lt;button type="button" class="btn"&gt;&lt;span&gt;default&lt;/span&gt;&lt;/button&gt;
+&lt;button type="button" class="btn large"&gt;&lt;span&gt;large&lt;/span&gt;&lt;/button&gt;
+
+</code></pre>
+			</div>
+		</div>
+		<!--  -->
+
+		<!--  -->
+		<h2 class="comp_tit">아이콘</h2>
+		<p class="comp_txt">아이콘 컴포넌트 삽입.</p>
+		<div class="comp_sec">
+			<div class="comp_view">
+				<button type="button" class="btn">
+					<i class="icon"></i><span>default</span>
+				</button>
+				<button type="button" class="btn">
+					<span>default</span><i class="icon"></i>
+				</button>
+				<button type="button" class="btn"><i class="icon"></i></button>
+			</div>
+			<div class="comp_code">
+<pre><code class="language-html">
+&lt;button type="button" class="btn"&gt;
+	&lt;i class="icon"&gt;&lt;/i&gt;&lt;span&gt;default&lt;/span&gt;
+&lt;/button&gt;
+&lt;button type="button" class="btn"&gt;
+	&lt;span&gt;default&lt;/span&gt;&lt;i class="icon"&gt;&lt;/i&gt;
+&lt;/button&gt;
+&lt;button type="button" class="btn"&gt;&lt;i class="icon"&gt;&lt;/i&gt;&lt;/button&gt;
+
+</code></pre>
+			</div>
+		</div>
+		<!--  -->
+
+		<!--  -->
+		<h2 class="comp_tit">그룹</h2>
+		<p class="comp_txt">.btn_wrap 으로 감쌈.</p>
+		<div class="comp_sec">
+			<div class="comp_view">
+				<div class="btn_wrap">
+					<button type="button" class="btn"><span>default</span></button>
+					<button type="button" class="btn"><span>default</span></button>
+					<button type="button" class="btn"><span>default</span></button>
+				</div>
+			</div>
+			<div class="comp_code">
+<pre><code class="language-html">
+&lt;div class="btn_wrap"&gt;
+	&lt;button type="button" class="btn"&gt;&lt;span&gt;default&lt;/span&gt;&lt;/button&gt;
+	&lt;button type="button" class="btn"&gt;&lt;span&gt;default&lt;/span&gt;&lt;/button&gt;
+	&lt;button type="button" class="btn"&gt;&lt;span&gt;default&lt;/span&gt;&lt;/button&gt;
+&lt;/div>
+
+</code></pre>
+			</div>
+		</div>
+		<!--  -->
+
+	</div>
+</body>
+</html>

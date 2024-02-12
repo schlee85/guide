@@ -1,0 +1,96 @@
+/* ************************************************************
+	Button
+************************************************************ */
+
+.btn {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	height: 40px;
+	padding: 6px 20px;
+	border-radius: 4px;
+	border: 1px solid var(--color-btn-default);
+	background: var(--color-btn-default);
+	font-size: 14px;
+	color: var(--color-black);
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.btn > span {
+	display: inline-block;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	color: inherit;
+}
+
+/* Color */
+.btn.primary {
+	background: var(--color-btn-primary);
+	border-color: var(--color-btn-primary);
+	color: var(--color-white);
+}
+.btn.secondary {
+	background: var(--color-btn-secondary);
+	border-color: var(--color-btn-secondary);
+	color: var(--color-white);
+}
+
+/* Disabled */
+.btn[disabled] {
+	pointer-events: none;
+	opacity: 0.5;
+}
+
+/* Outline */
+.btn.outline {
+	background: var(--color-btn-white);
+	border-color: var(--color-btn-default);
+}
+.btn.primary.outline {
+	background: var(--color-btn-white);
+	border-color: var(--color-btn-primary);
+	color: var(--color-btn-primary);
+}
+.btn.secondary.outline {
+	background: var(--color-btn-white);
+	border-color: var(--color-btn-secondary);
+	color: var(--color-btn-secondary);
+}
+
+/* Size */
+.btn.small {
+	height: 30px;
+	padding: 4px 10px;
+}
+.btn.large {
+	height: 50px;
+	padding: 8px 24px;
+}
+
+/* Icon */
+.btn > .icon + span,
+.btn > span + .icon {
+	margin-left: 8px;
+}
+
+/* Group */
+.btn_wrap {
+	display: inline-flex;
+	justify-content: center;
+}
+.btn_wrap .btn:first-child {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+.btn_wrap .btn:first-child ~ .btn:not(:last-child) {
+	border-radius: 0;
+}
+.btn_wrap .btn:last-child {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.btn_wrap .btn:first-child ~ .btn {
+	border-left-color: var(--color-white);
+}

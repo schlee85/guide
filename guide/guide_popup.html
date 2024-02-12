@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Guide - Popup</title>
+	<link rel="stylesheet" href="./asset/guide.css">
+	<link rel="stylesheet" href="/css/ui.css">
+	<script src="/js/jquery-3.7.1.min.js"></script>
+	<script src="/js/ui.js"></script>
+
+	<!-- highlight -->
+	<link rel="stylesheet" href="./asset/highlight/atom-one-dark.css">
+	<script src="./asset/highlight/highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
+</head>
+<body>
+	<div class="guide_components">
+		<h1 class="comp_mtit">Popup</h1>
+		<p class="comp_mtxt">팝업 컴포넌트.</p>
+
+		<!--  -->
+		<h2 class="comp_tit">기본</h2>
+		<p class="comp_txt">
+			* data-ui : 스크립트 호출.<br>
+			* 버튼의 href와 팝업의 ID를 동일하게 부여한다.
+		</p>
+		<div class="comp_sec">
+			<div class="comp_view">
+				<a href="#pop1" data-pop-open>팝업 열기</a>
+				<div class="pop_wrap" id="pop1" data-ui="popup">
+					<article class="inner">
+						<header class="pop_head">
+							<h1>popup1 head</h1>
+						</header>
+						<div class="pop_cont" tabindex="0">
+							popup1 content..
+						</div>
+						<a href="#" data-pop-close>close</a>
+					</article>
+					<div class="dim"></div>
+				</div>
+			</div>
+			<div class="comp_code">
+<pre><code class="language-html">
+&lt;a href="#pop1" data-pop-open&gt;팝업 열기&lt;/a&gt;
+
+&lt;div class="pop_wrap" id="pop1" data-ui="popup"&gt;
+	&lt;article class="inner"&gt;
+		&lt;header class="pop_head"&gt;
+			&lt;h1&gt;popup1 head&lt;/h1&gt;
+		&lt;/header&gt;
+		&lt;div class="pop_cont" tabindex="0"&gt;
+			popup1 content..
+		&lt;/div&gt;
+		&lt;a href="#" data-pop-close&gt;close&lt;/a&gt;
+	&lt;/article&gt;
+	&lt;div class="dim"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+			</div>
+		</div>
+		<!--  -->
+
+		<!--  -->
+		<h2 class="comp_tit">backdrop</h2>
+		<p class="comp_txt">
+			* data-backdrop: 배경 클릭 시 팝업 닫기.
+		</p>
+		<div class="comp_sec">
+			<div class="comp_view">
+				<a href="#pop2" data-pop-open>팝업 열기</a>
+				<div class="pop_wrap" id="pop2" data-ui="popup" data-backdrop>
+					<article class="inner">
+						<header class="pop_head">
+							<h1>popup2 head</h1>
+						</header>
+						<div class="pop_cont" tabindex="0">
+							popup2 content..
+						</div>
+						<a href="#" data-pop-close>close</a>
+					</article>
+					<div class="dim"></div>
+				</div>
+			</div>
+			<div class="comp_code">
+<pre><code class="language-html">
+&lt;a href="#pop2" data-pop-open&gt;팝업 열기&lt;/a&gt;
+
+&lt;div class="pop_wrap" id="pop2" data-ui="popup" data-backdrop&gt;
+	&lt;article class="inner"&gt;
+		&lt;header class="pop_head"&gt;
+			&lt;h1&gt;popup2 head&lt;/h1&gt;
+		&lt;/header&gt;
+		&lt;div class="pop_cont" tabindex="0"&gt;
+			popup2 content..
+		&lt;/div&gt;
+		&lt;a href="#" data-pop-close&gt;close&lt;/a&gt;
+	&lt;/article&gt;
+	&lt;div class="dim"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+			</div>
+		</div>
+		<!--  -->
+
+		<!--  -->
+		<h2 class="comp_tit">바텀시트</h2>
+		<p class="comp_txt">
+			* .pop_wrap.bottomsheet
+		</p>
+		<div class="comp_sec">
+			<div class="comp_view">
+				<a href="#pop3" data-pop-open>팝업 열기</a>
+				<div class="pop_wrap bottomsheet" id="pop3" data-ui="popup">
+					<article class="inner">
+						<header class="pop_head">
+							<h1>popup3 head</h1>
+						</header>
+						<div class="pop_cont" tabindex="0">
+							popup3 content..
+						</div>
+						<a href="#" data-pop-close>close</a>
+					</article>
+					<div class="dim"></div>
+				</div>
+			</div>
+			<div class="comp_code">
+<pre><code class="language-html">
+&lt;a href="#pop3" data-pop-open&gt;팝업 열기&lt;/a&gt;
+
+&lt;div class="pop_wrap bottomsheet" id="pop3" data-ui="popup"&gt;
+	&lt;article class="inner"&gt;
+		&lt;header class="pop_head"&gt;
+			&lt;h1&gt;popup3 head&lt;/h1&gt;
+		&lt;/header&gt;
+		&lt;div class="pop_cont" tabindex="0"&gt;
+			popup3 content..
+		&lt;/div&gt;
+		&lt;a href="#" data-pop-close&gt;close&lt;/a&gt;
+	&lt;/article&gt;
+	&lt;div class="dim"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+			</div>
+		</div>
+		<!--  -->
+
+	</div>
+</body>
+</html>

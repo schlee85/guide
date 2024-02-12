@@ -1,0 +1,19 @@
+/* ************************************************************
+	Accordion
+************************************************************ */
+
+.acc_wrap {
+
+}
+.acc_head {
+	button {
+		width: 100%;
+		height: 40px;
+		text-align: left;
+		cursor: pointer;
+	}
+}
+.acc_cont {
+	display: none;
+	overflow: hidden;
+}

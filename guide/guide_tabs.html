@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Guide - Tabs</title>
+	<link rel="stylesheet" href="./asset/guide.css">
+	<link rel="stylesheet" href="/css/ui.css">
+	<script src="/js/jquery-3.7.1.min.js"></script>
+	<script src="/js/ui.js"></script>
+
+	<!-- highlight -->
+	<link rel="stylesheet" href="./asset/highlight/atom-one-dark.css">
+	<script src="./asset/highlight/highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
+</head>
+<body>
+	<div class="guide_components">
+		<h1 class="comp_mtit">Tabs</h1>
+		<p class="comp_mtxt">탭메뉴 컴포넌트.</p>
+
+		<!--  -->
+		<h2 class="comp_tit">기본</h2>
+		<p class="comp_txt">
+			* data-ui : 스크립트 호출.<br>
+			* data-active-index : 활성화 인덱스.
+		</p>
+		<div class="comp_sec">
+			<div class="comp_view">
+				<div class="tabs_wrap" data-ui="tabs" data-active-index="0">
+					<div class="tabs_head">
+						<a href="#tab01_1">menu01</a>
+						<a href="#tab01_2">menu02</a>
+						<a href="#tab01_3">menu03</a>
+					</div>
+					<div class="tabs_cont">
+						<div id="tab01_1" style="background:dodgerblue;">cont01</div>
+						<div id="tab01_2" style="background:tomato;">cont02</div>
+						<div id="tab01_3" style="background:rebeccapurple;">cont03</div>
+					</div>
+				</div>
+			</div>
+			<div class="comp_code">
+<pre><code class="language-html">
+&lt;div class="tabs_wrap" data-ui="tabs" data-active-index="0"&gt;
+	&lt;div class="tabs_head"&gt;
+		&lt;a href="#tab01_1"&gt;menu01&lt;/a&gt;
+		&lt;a href="#tab01_2"&gt;menu02&lt;/a&gt;
+		&lt;a href="#tab01_3"&gt;menu03&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;div class="tabs_cont"&gt;
+		&lt;div id="tab01_1"&gt;cont01&lt;/div&gt;
+		&lt;div id="tab01_2"&gt;cont02&lt;/div&gt;
+		&lt;div id="tab01_3"&gt;cont03&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+			</div>
+		</div>
+		<!--  -->
+
+		<!--  -->
+		<h2 class="comp_tit">인라인</h2>
+		<p class="comp_txt">
+			* .tabs_wrap.inline
+		</p>
+		<div class="comp_sec">
+			<div class="comp_view">
+				<div class="tabs_wrap inline" data-ui="tabs" data-active-index="0">
+					<div class="tabs_head">
+						<a href="#tab02_1">menu01</a>
+						<a href="#tab02_2">menu02</a>
+						<a href="#tab02_3">menu03</a>
+						<a href="#tab02_4">menu04</a>
+						<a href="#tab02_5">menu05</a>
+						<a href="#tab02_6">menu06</a>
+					</div>
+					<div class="tabs_cont">
+						<div id="tab02_1" style="background:dodgerblue;">cont01</div>
+						<div id="tab02_2" style="background:tomato;">cont02</div>
+						<div id="tab02_3" style="background:rebeccapurple;">cont03</div>
+						<div id="tab02_4" style="background:dodgerblue;">cont04</div>
+						<div id="tab02_5" style="background:tomato;">cont05</div>
+						<div id="tab02_6" style="background:rebeccapurple;">cont06</div>
+					</div>
+				</div>
+			</div>
+			<div class="comp_code">
+<pre><code class="language-html">
+&lt;div class="tabs_wrap inline" data-ui="tabs" data-active-index="0"&gt;
+	&lt;div class="tabs_head"&gt;
+		&lt;a href="#tab01_1"&gt;menu01&lt;/a&gt;
+		&lt;a href="#tab01_2"&gt;menu02&lt;/a&gt;
+		&lt;a href="#tab01_3"&gt;menu03&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;div class="tabs_cont"&gt;
+		&lt;div id="tab01_1"&gt;cont01&lt;/div&gt;
+		&lt;div id="tab01_2"&gt;cont02&lt;/div&gt;
+		&lt;div id="tab01_3"&gt;cont03&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+</code></pre>
+			</div>
+		</div>
+		<!--  -->
+
+	</div>
+</body>
+</html>

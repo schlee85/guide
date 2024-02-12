@@ -1,0 +1,55 @@
+/* ************************************************************
+	Tabs
+************************************************************ */
+
+// 기본 타입
+.tabs_wrap {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.tabs_head {
+	display: flex;
+	a {
+		display: inline-flex;
+		justify-content: center;
+		align-items: center;
+		flex: 1 0 0;
+		padding: 0 2rem;
+		height: 40px;
+		border-width: 0.1rem;
+		border-style: solid;
+		border-color: var(--color-gray300) var(--color-gray300) var(--color-gray300) transparent;
+		&:first-child {
+			border-left-color: var(--color-gray300);
+		}
+		&.active {
+			color: red;
+			background: var(--color-gray200);
+		}
+		&:hover,
+		&:focus {
+			text-decoration: underline;
+		}
+	}
+}
+.tabs_cont {
+	padding-top: 1rem;
+	& > div {
+		display: none;
+		min-height: 100px;
+	}
+}
+
+// 인라인
+.tabs_wrap.inline {
+	.tabs_head {
+		display: flex;
+		overflow-x: auto;
+		max-width: 100%;
+		a {
+			flex: 0 0 auto;
+		}
+	}
+}

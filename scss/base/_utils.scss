@@ -1,0 +1,16 @@
+/* ************************************************************
+	Utils
+************************************************************ */
+
+.blind {
+	display: inline-block;
+	position: absolute;
+	z-index: -10;
+	width: 0 !important;
+	height: 0 !important;
+	overflow: hidden !important;
+	font-size: medium;
+	line-height: normal;
+	word-break: break-all;
+	opacity:0 !important;
+}
