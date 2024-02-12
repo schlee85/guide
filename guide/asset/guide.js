@@ -120,7 +120,6 @@ guideApp.lnb = {
 		$parent.addClass('active');
 
 		var src = $(e.currentTarget).attr('href');
-		console.log(src);
 		if (src.indexOf('.html') > -1) {
 			var hasIframe = this.$cont.find('iframe').attr('src') === src;
 			if (hasIframe) return;
