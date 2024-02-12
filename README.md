@@ -1,9 +1,11 @@
 # UI 개발 진행표
 
-업데이트는 진행중.
+- 업데이트는 진행중.
+
+- URL : https://github.com/schlee85/guide/
 
 ## 작업 방식
 
-1. VSCode live server
+- VSCode live server
 
-2. live sass compiler
+- live sass compiler
